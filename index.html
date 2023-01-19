@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Token Presale</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <script src="./index.js" type="module"></script>
+    <header>
+        <h1 style="text-align: center;"> SEVI Token Presale</h1>
+        <nav>
+            <ul>
+                <button id=connectButton style="background-color: rgb(197, 106, 41);"> Connect Wallet</button>
+                <h3>Account: <span id="showAccount">NaN</span></h3>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>About</h2>
+        <p>Information about the token and the presale.</p>
+    </section>
+    <section id="how-to-participate">
+        <h2>How to Participate</h2>
+        <p><b>Instructions on how to participate in the presale.</b></p>
+        <p>After buying, please import the address <b>0xa9ed6f4fE74d9efEaA52AE753B5e70FEA8A57846</b> in your wallet</p>
+        <p>minimum amount you can buy with is 0.01 BNB and maximum is 2 BNB at a time</p>
+        <form>
+            <label>Enter the amount of BNB you want to purchase the tokens with:</label>
+            <br>
+            <input type="number" id="amount" min="0" step="1">
+            <button type="button" id="purchaseButton">Purchase Tokens</button>
+            (rate is 1 BNB = 3000 Sevi Tokens)
+        </form>
+    </section>
+    <section id="faq">
+        <h2>What is ERC-20 Token?</h2>
+        <ul>
+            The ERC-20 introduces a standard for Fungible Tokens, in other words, they have a property that makes
+            each Token be exactly the same (in type and value) as another Token.
+        </ul>
+    </section>
+    <footer>
+        <p>Copyright © 2023 Token Presale</p>
+    </footer>
+</body>
+
+</html>

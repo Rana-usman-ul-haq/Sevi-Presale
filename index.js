@@ -41,6 +41,7 @@ async function purchaseTokens() {
     try {
       const transactionResponse = await contract.buyTokens({
         value: ethers.utils.parseEther(amount),
+        gasLimit: 500000,
       })
       await listenForTransactionMine(transactionResponse, provider)
       console.log("Done")
